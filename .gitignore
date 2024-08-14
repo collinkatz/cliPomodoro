@@ -5,6 +5,3 @@ venv/
 
 # Don't need pycache here either
 __pycache__/
-
-# Don't need and __init__
-__init__.py
