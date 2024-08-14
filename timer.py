@@ -1,8 +1,9 @@
 import os
 import time
+import config
 from plyer import notification
 
-wait_sequence = [20*60, 30]
+wait_sequence = [config.time_on_minutes*60, config.time_off_minutes*60]
 
 def seconds_to_timer(seconds):
     minutes, seconds = divmod(seconds, 60)
@@ -51,7 +52,7 @@ def print_time_up():
 try:
     # Shrink the CLI to just fit the timer so it doesn't take up so much space
     os.system('mode con: cols=20 lines=9')
-    
+
     while True:
         for wait_time in wait_sequence:
             for i in range(wait_time):
