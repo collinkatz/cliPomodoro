@@ -3,7 +3,7 @@ import time
 import config
 from plyer import notification
 
-wait_sequence = [config.time_on_minutes*60, config.time_off_minutes*60]
+wait_sequence = [int(config.time_on_minutes*60), int(config.time_off_minutes*60)]
 
 def seconds_to_timer(seconds):
     minutes, seconds = divmod(seconds, 60)
