@@ -1,0 +1,4 @@
+# Don't push virtual environments lol
+.venv/
+venv/
+*venv/
